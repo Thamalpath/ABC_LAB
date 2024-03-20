@@ -1,0 +1,99 @@
+<html lang="en">
+    <head>
+        <title>Admin Sign In</title>
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="login/css/style.css">
+
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+
+    </head>
+
+    <body class="img js-fullheight"
+        style="background-image: url(login/images/bg.jpg);">
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center mb-5">
+                        <h2 class="heading-section">Admin Sign In</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="form-group mb-4">
+                            <input type="text"
+                                class="form-control" placeholder="Username"
+                                id="yourUsername"
+                                required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="password" class="form-control"
+                                placeholder="Password" id="yourPassword"
+                                required>
+                        </div>
+                        <div class="form-group mt-5">
+                            <button onclick="login()"
+                                class="form-control btn btn-primary submit px-3">Sign
+                                In</button>
+                        </div>
+                        <div class="form-group mt-5">
+                            <button type="submit"
+                                class="form-control btn btn-primary submit px-3"
+                                onclick="redirectToHomePage()">Home Page</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="login/js/jquery.min.js"></script>
+        <script src="login/js/popper.js"></script>
+        <script src="login/js/bootstrap.min.js"></script>
+        <script src="login/js/main.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+        <script>
+            const notyf = new Notyf({
+                duration: 3000,
+                position: {
+                x: 'right',
+                y: 'top',
+                },
+            });
+        </script>
+
+        <script>
+            function login() {
+                var username = document.getElementById("yourUsername").value;
+                var password = document.getElementById("yourPassword").value;
+    
+                if (username === "admin@gmail.com" && password === "admin") {
+                    notyf.success('Login successful! Redirecting to Dashboard.');
+                    setTimeout(function() {
+                        window.location.href = "dashboard.html";
+                    }, 2000);
+                } else {
+                    notyf.error("Invalid username or password.");
+                }
+            }
+        </script>
+        <script>
+            function redirectToHomePage() {
+              // Redirect to the home page
+              window.location.href = '../Project/index.html';
+            }
+        </script>
+
+    </body>
+
+</html>

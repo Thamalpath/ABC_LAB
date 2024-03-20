@@ -1,0 +1,476 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ABC Laboratories - Online Appointment Scheduling</title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="shortcut icon" type="image/x-icon"
+            href="assets/img/logo/favicon.png">
+
+        <!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <link rel="stylesheet" href="assets/css/flaticon.css">
+        <link rel="stylesheet" href="assets/css/spacing.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style1.css">
+    </head>
+    <body>
+
+        <!-- Scroll-top -->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <i class="fas fa-angle-up"></i>
+        </button>
+        <!-- Scroll-top-end-->
+
+        <!-- header-area -->
+        <header class="d-none d-xl-block">
+            <div class="header__area tp-home-one" id="header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xxl-2 col-lg-3">
+                            <div class="logo">
+                                <a href="index.html"><img
+                                        src="assets/img/logo/logo.png"
+                                        alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xxl-7 col-lg-6">
+                            <div class="main-menu">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li><a class="active" href="index.html">Home</a>
+                                        </li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="shop.html">Appointment</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li class="has-dropdown"><a href>Sign</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="login.html">Sign In</a></li>
+                                                <li><a href="register.html">Sign
+                                                        Up</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-area-end -->
+
+        <!-- tp-mobile-header-area start -->
+        <div id="header-mob-sticky"
+            class="tp-mobile-header-area tp-home-lg-banner pt-15 pb-15 d-xl-none">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <div class="tp-mob-logo">
+                            <a href="index.html"><img
+                                    src="assets/img/logo/logo.png" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div
+                            class="tp-mobile-bar d-flex align-items-center justify-content-end">
+                            <button class="tp-menu-toggle"><i
+                                    class="far fa-bars"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- tp-mobile-header-area end -->
+
+        <!-- sidebar-info -->
+        <div class="tpsideinfo tp-side-info-area">
+            <button class="tpsideinfo__close"><i class="fal fa-times"></i></button>
+            <div class="tpsideinfo__logo mb-40">
+                <a href="index.html"><img src="assets/img/logo/white-logo.png"
+                        alt="logo"></a>
+            </div>
+
+            <div class="mobile-menu"></div>
+        </div>
+        <!-- sidebar-info-end -->
+
+        <div class="body-overlay"></div>
+
+        <!-- main-area -->
+        <main>
+            <!-- breadcrumb-area -->
+            <section class="breadcrumb__area pt-100 pb-120 breadcrumb__overlay"
+                data-background="assets/img/banner/breadcrumb-01.jpg">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <div class="tp-breadcrumb">
+                                <h2 class="tp-breadcrumb__title">Appoinment</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- breadcrumb-area-end -->
+
+            <section class="services-area pt-120 pb-90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-5">
+                            <div class="sidebar">
+                                <div class="sidebar__item">
+                                    <h4>Filter</h4>
+                                    <ul>
+                                        <label for
+                                            style="font-weight: 700; font-size: 18px;">Start
+                                            Time : </label>
+                                        <input type="Number" name
+                                            id="startTimeFilter"
+                                            style="font-weight: 500; font-size: 18px;"
+                                            placeholder="Start Time">
+                                        <br><br>
+                                        <span
+                                            style="font-weight: bold; text-align: center; margin-left:80px; font-size: 20px; padding-top: 200px;">OR</span>
+                                        <br><br>
+                                        <label for
+                                            style="font-weight: 700; font-size: 18px;">End
+                                            Time : </label>
+                                        <input type="Number" name
+                                            id="endTimeFilter"
+                                            style="font-weight: 500; font-size: 18px;"
+                                            placeholder="End Time">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-7">
+                            <div class="product__discount">
+                                <div
+                                    class="section-title product__discount__title">
+                                    <h2>Doctors</h2>
+                                </div>
+                            </div>
+                            <div class="row" id="productList">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!-- main-area-end -->
+
+        <!-- footer-area -->
+        <footer>
+            <div class="footer-area theme-bg pt-100 pb-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div
+                                class="footer-widget footer-col-1 mb-50 wow fadeInUp"
+                                data-wow-delay=".2s">
+                                <h4 class="footer-widget__title mb-30">
+                                    <a href="index.html"><img
+                                            src="assets/img/logo/white-logo.png"
+                                            alt="logo"></a>
+                                </h4>
+                                <p>ABC Laboratories, we understand the
+                                    importance of timely and reliable medical
+                                    testing in healthcare decision-making. </p>
+                                <div class="footer-widget__social">
+                                    <a class="tp-f-youtube" href="#"><i
+                                            class="fa-brands fa-youtube"></i></a>
+                                    <a class="tp-f-twitter" href="#"><i
+                                            class="fa-brands fa-twitter"></i></a>
+                                    <a class="tp-f-fb" href="#"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                    <a class="tp-f-skype" href="#"><i
+                                            class="fa-brands fa-skype"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div
+                                class="footer-widget footer-col-2 mb-50 wow fadeInUp"
+                                data-wow-delay=".4s">
+                                <h4 class="footer-widget__title mb-20">Useful
+                                    links</h4>
+                                <div class="footer-widget__links">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="shop.html">Appointment</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div
+                                class="footer-widget footer-col-3 mb-50 wow fadeInUp"
+                                data-wow-delay=".6s">
+                                <h4 class="footer-widget__title mb-20">Contact
+                                    info</h4>
+                                <div class="footer-widget__info">
+                                    <ul>
+                                        <li><a>Bowery St,
+                                                New York, NY 10013, USA</a></li>
+                                        <li><a>(+123) 123456789</a></li>
+                                        <li><a>info@abclab.com</a></li>
+                                        <li>Office Hours: 8AM - 11PM</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-area-bottom theme-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                            <div class="footer-widget__copyright">
+                                <span> © Copyright ©2024 <a href="index.html">ABC
+                                        Laboratories</a>.
+                                    <i>All Rights Reserved Copyright</i></span>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                            <div
+                                class="footer-widget__copyright-info info-direction">
+                                <ul class="d-flex align-items-center">
+                                    <li><a href="#">Terms and conditions</a></li>
+                                    <li><a href="#">Privacy policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area-end -->
+
+        <!-- JS here -->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/waypoints.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/swiper-bundle.js"></script>
+        <script src="assets/js/slick.js"></script>
+        <script src="assets/js/magnific-popup.js"></script>
+        <script src="assets/js/counterup.js"></script>
+        <script src="assets/js/wow.js"></script>
+        <script src="assets/js/nice-select.js"></script>
+        <script src="assets/js/isotope-pkgd.js"></script>
+        <script src="assets/js/imagesloaded-pkgd.js"></script>
+        <script src="assets/js/meanmenu.js"></script>
+        <script src="assets/js/ajax-form.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            const productList = document.getElementById("productList");
+            const startTimeFilter = document.getElementById("startTimeFilter");
+            const endTimeFilter = document.getElementById("endTimeFilter");
+    
+            // Function to fetch and display products
+            const fetchProducts = () => {
+                // Fetch product data from the API
+                fetch("http://localhost:8080/api/v1/consult/getconsult")
+                    .then((response) => response.json())
+                    .then((products) => {
+                        // Clear the existing product list
+                        productList.innerHTML = "";
+    
+                        // Loop through products and generate HTML content
+                        products.forEach((product) => {
+                            const productItem = document.createElement("div");
+                            productItem.className = "col-lg-4 col-md-6 col-sm-6";
+                            productItem.innerHTML = `
+                            <div class="product__item">
+                            <div class="product__item__pic set-bg">
+                                <img src="assets/img/doctor.jpg" style="max-width: 100%;" alt="">
+                                <ul class="product__hover">
+                                </ul>
+                            </div>
+                            <div class="product__item__text" style="margin-top:10px;">
+                                <h4><a href="${getUserLink(product)}" style="text-align: center; text-transform: capitalize;">${product.name}</a></h4>
+                                <div style="text-align: center; font-weight: bold; margin-bottom: -50px;">
+                                    <p style="text-align: center; font-weight: 600; color: rgb(82, 78, 78);">Available Time: ${product.start_time} -  ${product.end_time}</p>&nbsp;
+                                </div>
+                                <a href="${getUserLink(product)}"><button class="tp-btn mt-4">Book Appointment</button></a>
+                            </div>
+                        </div>`;
+    
+                            productList.appendChild(productItem);
+                        });
+                    })
+                    .catch((error) => {
+                        console.error("Error fetching product data:", error);
+                    });
+            };
+    
+    
+            // Function to fetch and display filtered products
+            const fetchFilteredProducts = (startTime) => {
+                // Fetch filtered product data from the API
+                fetch(`http://localhost:8080/api/v1/consult/filter-by-start-time`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        start_time: startTime,
+    
+                    }),
+                })
+                    .then((response) => response.json())
+                    .then((filteredProducts) => {
+                        // Clear the existing product list
+                        productList.innerHTML = "";
+                        if (filteredProducts.length === 0) {
+                            // Create an error message element
+                            const errorMessage = document.createElement("div");
+                            errorMessage.className = "col-lg-9 text-danger text-bold";
+                            errorMessage.textContent = "Doctor Not Found.";
+    
+                            productList.appendChild(errorMessage);
+                        } else {
+                            // Loop through filtered products and generate HTML content
+                            filteredProducts.forEach((product) => {
+                                const productItem = document.createElement("div");
+                                productItem.className = "col-lg-4 col-md-6 col-sm-6";
+                            productItem.innerHTML = `
+                            <div class="product__item">
+                            <div class="product__item__pic set-bg">
+                                <img src="assets/img/doctor.jpg" style="max-width: 100%;" alt="">
+                                <ul class="product__hover">
+                                </ul>
+                            </div>
+                            <div class="product__item__text" style="margin-top:10px;">
+                                <h4><a href="${getUserLink(product)}" style="text-align: center; text-transform: capitalize;">${product.name}</a></h4>
+                                <div style="text-align: center; font-weight: bold; margin-bottom: -50px;">
+                                    <p style="text-align: center; font-weight: 600; color: rgb(82, 78, 78);">Available Time: ${product.start_time} -  ${product.end_time}</p>&nbsp;
+                                </div>
+                                <a href="${getUserLink(product)}"><button class="tp-btn mt-4">Book Appointment</button></a>
+                            </div>
+                        </div>`;
+    
+                                productList.appendChild(productItem);
+                            });
+                        }
+                    })
+                    .catch((error) => {
+                        console.error("Error fetching filtered product data:", error);
+                    });
+            };
+    
+    
+            // Function to fetch and display filtered products
+            const fetchFilteredProductsend = (endTime) => {
+                // Fetch filtered product data from the API
+                fetch(`http://localhost:8080/api/v1/consult/filter-by-end-time`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        end_time: endTime,
+    
+                    }),
+                })
+                    .then((response) => response.json())
+                    .then((filteredProducts) => {
+                        // Clear the existing product list
+                        productList.innerHTML = "";
+                        if (filteredProducts.length === 0) {
+                            // Create an error message element
+                            const errorMessage = document.createElement("div");
+                            errorMessage.className = "col-lg-9 text-danger text-bold";
+                            errorMessage.textContent = "Doctor Not Found.";
+    
+                            productList.appendChild(errorMessage);
+                        } else {
+                            // Loop through filtered products and generate HTML content
+                            filteredProducts.forEach((product) => {
+                                const productItem = document.createElement("div");
+                                productItem.className = "col-lg-4 col-md-6";
+                                productItem.innerHTML = `
+                            <div class="product__item">
+                                    <div class="product__item__pic set-bg">
+                                        <img src="assets/img/doctor.jpg" style="max-width: 100%;" alt="">
+                                        <ul class="product__hover">
+                                        </ul>
+                                    </div>
+                                    <div class="product__item__text" style="margin-top:10px;">
+                                        <h4><a href="${getUserLink(product)}" style="text-align: center; text-transform: capitalize;">${product.name}</a></h4>
+                                        <div style="text-align: center; font-weight: 500; margin-bottom: -50px;">
+                                            <p style="text-align: center; font-weight: 600; color: rgb(82, 78, 78);">Available Time: ${product.start_time} -  ${product.end_time}</p>&nbsp;
+                                        </div>
+                                    <a href="${getUserLink(product)}"><button class="tp-btn mt-4">Book Appointment</button></a>
+                                </div>
+                            `;
+    
+                                productList.appendChild(productItem);
+                            });
+                        }
+                    })
+                    .catch((error) => {
+                        console.error("Error fetching filtered product data:", error);
+                    });
+            };
+    
+    
+    
+    
+            // Event listener for input changes in the filter fields
+            startTimeFilter.addEventListener("input", () => {
+                const startTime = startTimeFilter.value;
+                const endTime = endTimeFilter.value;
+                if (startTime === "") {
+                    fetchProducts();
+                } else {
+                    fetchFilteredProducts(startTime);
+                }
+            });
+    
+            endTimeFilter.addEventListener("input", () => {
+                const startTime = startTimeFilter.value;
+                const endTime = endTimeFilter.value;
+                if (endTime === "") {
+                    fetchProducts();
+                } else {
+                    fetchFilteredProductsend(endTime);
+                }
+            });
+    
+            // Initial fetch to load all products by default
+            fetchProducts();
+    
+    
+            // Function to determine the appropriate link based on user login status
+            const getUserLink = (product) => {
+                // Replace this with your actual logic to check user session or authentication
+                var username = sessionStorage.getItem('userName');
+                if (!username) {
+                    window.location.href = 'login.html'; // Redirect to login page
+                } else {
+                    return `checkout.html?name=${encodeURIComponent(product.name)}`;
+                }
+            };
+        </script>
+    </body>
+</html>
