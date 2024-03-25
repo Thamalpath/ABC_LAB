@@ -1,7 +1,7 @@
 # ABC Laboratories (Lab Appointment System)
 ABC Laboratories is aiming to improve patient care by replacing manual scheduling and documentation procedures with an advanced web-based test booking system. This innovative project aims to improve the quality and productivity of the service by providing a simple registration process, efficient handling of patient inquiries, and a unique patient ID for personalized care. The system also includes booking doctor appointments, patient engagement, and doctor engagement. It also offers to send an accept or decline email after accepting or declining the appointment, streamlining the healthcare experience. Accessibility is a priority, allowing doctors to view appointments and accept or decline the appointment quickly. The system will be implemented using IntelliJ IDEA web application technology and MySQL Workbench for database administration. This integration will enhance operational efficiency and service quality by streamlining appointment scheduling, and data administration.
 
-# Functional Requirements
+## Functional Requirements
 1. Patient Registration
 •	This allows patients to register for health checks by providing the required personal details.
 •	For every patient who has registered, create a distinct ID.
